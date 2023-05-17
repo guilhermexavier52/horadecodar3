@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+// Função para ler um número do usuário
+ function lerNumero(mensagem) {
+  return parseFloat(prompt(mensagem));
+}
+
+// Variáveis para contar os valores dentro e fora do intervalo
+  var dentroIntervalo = 0;
+  var foraIntervalo = 0;
+
+// Loop para ler os 10 valores do usuário
+  for (var i = 0; i < 10; i++) {
+  var valor = lerNumero("Digite o valor " + (i + 1) + ":");
+  
+  // Verifica se o valor está dentro do intervalo
+  if (valor >= 24 && valor <= 42) {
+    dentroIntervalo++;
+  } else {
+    foraIntervalo++;
+  }
+ }
+
+// Imprime os resultados
+  alert("Valores dentro do intervalo: " + dentroIntervalo);  
+  alert("Valores fora do intervalo: " + foraIntervalo);
+
+
+
+
+
+</script>    
+</head>
+<body>
+    
+</body>
+</html>

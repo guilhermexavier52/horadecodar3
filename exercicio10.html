@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+// Função para ler um número do usuário
+function lerNumero(mensagem) {
+  return parseInt(prompt(mensagem));
+}
+
+// Lê o valor de N
+var N = lerNumero("Digite um número inteiro:");
+
+// Loop externo para percorrer as tabuadas de 1 a N
+for (var i = 1; i <= N; i++) {
+ alert("Tabuada do", i + ":");
+  
+  // Loop interno para calcular e imprimir a tabuada do número atual
+  for (var j = 1; j <= 10; j++) {
+    var resultado = i * j;
+   alert(i + " x " + j + " = " + resultado);
+  }
+  
+ alert(""); // Linha em branco entre as tabuadas
+}
+
+
+
+
+</script>    
+</head>
+<body>
+    
+</body>
+</html>
